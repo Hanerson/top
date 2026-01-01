@@ -88,13 +88,24 @@ const Home: React.FC = () => {
         return ["全部", ...new Set(allCats)];
     }, []);
 
-    // 2. 过滤逻辑 (标签 + 搜索词)
+    // 2. 过滤逻辑 (标签 + 搜索词) 并按日期排序（最新的在前）
     const filteredPosts = useMemo(() => {
-        return posts.filter(post => {
+        // 先过滤
+        const filtered = posts.filter(post => {
             const matchesCategory = selectedCategory === "全部" || post.category === selectedCategory;
             const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
             return matchesCategory && matchesSearch;
+        });
+
+        // 然后排序 - 按日期字符串降序排列（最新的在前）
+        // 假设日期格式为 YYYY-MM-DD，如果是其他格式需要调整排序逻辑
+        return filtered.sort((a, b) => {
+            // 如果有专门的时间戳字段，优先使用：
+            // return new Date(b.timestamp) - new Date(a.timestamp);
+
+            // 按日期字符串排序
+            return b.date.localeCompare(a.date);
         });
     }, [selectedCategory, searchQuery]);
 

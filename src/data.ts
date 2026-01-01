@@ -90,4 +90,116 @@ export const posts: Post[] = [
         type: 'pdf',
         fileUrl: '/papers/Cream.pdf'
     },
+    {
+        id: 9,
+        title: "数据库系统复习",
+        excerpt: "概述--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/01-绪论.pdf'
+    },
+    {
+        id: 10,
+        title: "数据库系统复习",
+        excerpt: "关系数据库--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/02-关系数据库.pdf'
+    },
+    {
+        id: 11,
+        title: "数据库系统复习",
+        excerpt: "SQL--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/03-关系数据库标准语言SQL.pdf'
+    },
+    {
+        id: 12,
+        title: "数据库系统复习",
+        excerpt: "数据库安全性--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/04-数据库安全性.pdf'
+    },
+    {
+        id: 13,
+        title: "数据库系统复习",
+        excerpt: "数据库完整性--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/05-数据库完整性.pdf'
+    },
+    {
+        id: 14,
+        title: "数据库系统复习",
+        excerpt: "关系数据理论--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/06-关系数据理论.pdf'
+    },
+
+    {
+        id: 15,
+        title: "数据库系统复习",
+        excerpt: "数据库设计--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/07-数据库设计.pdf'
+    },
+
+    {
+        id: 16,
+        title: "数据库系统复习",
+        excerpt: "数据库恢复技术--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/10-数据库恢复技术.pdf'
+    },
+    {
+        id: 17,
+        title: "数据库系统复习",
+        excerpt: "并发控制--本文来自于'https://eaglebear2002.github.io/'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/11-并发控制.pdf'
+    },
+    {
+        id: 18,
+        title: "数据库系统复习",
+        excerpt: "数据库基础复习指南--本文来自于'https://costg.gitbook.io/njuse'",
+        date: "2026-1-1",
+        category: "数据库",
+        readTime: "5min",
+        image: "/images/Database.jpg",
+        type: 'pdf',
+        fileUrl: '/papers/数据库复习相关/数据管理基础复习指南.pdf'
+    },
 ];
