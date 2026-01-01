@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50 text-gray-900 antialiased font-sans;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full hover:bg-gray-400 transition-colors;
+}
+
+/* 渐变文字动画 */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+    background-size: 300%;
+    animation: gradient 8s ease infinite;
+}
+
+/* PDF 页面样式微调 */
+.react-pdf__Page {
+    @apply rounded-lg overflow-hidden;
+}
+.react-pdf__Page__canvas {
+    @apply w-full h-auto !important;
+}
