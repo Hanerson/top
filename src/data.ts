@@ -9,7 +9,6 @@ export const posts: Post[] = [
         date: "2023-11-05",
         category: "数据结构",
         readTime: "10 min read",
-        image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
         type: 'article',
         fileUrl: '/posts/AVL-tree.md'
     },
@@ -20,7 +19,6 @@ export const posts: Post[] = [
         date: "2023-11-08",
         category: "数据库",
         readTime: "15 min read",
-        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
         type: 'article',
         fileUrl: '/posts/B-tree.md'
     },
@@ -31,7 +29,6 @@ export const posts: Post[] = [
         date: "2023-11-12",
         category: "Java",
         readTime: "8 min read",
-        image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=800&q=80",
         type: 'article',
         fileUrl: '/posts/BasicJavaAPI.md'
     },
@@ -42,7 +39,6 @@ export const posts: Post[] = [
         date: "2023-11-15",
         category: "CS 基础",
         readTime: "20 min read",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
         type: 'article',
         fileUrl: '/posts/COA-review.md'
     },
@@ -53,7 +49,6 @@ export const posts: Post[] = [
         date: "2023-11-20",
         category: "网络",
         readTime: "12 min read",
-        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
         type: 'article',
         fileUrl: '/posts/OSILayers-phi-dataLink-netWork-transformation.md'
     },
@@ -64,7 +59,6 @@ export const posts: Post[] = [
         date: "2023-10-01",
         category: "数学",
         readTime: "PDF Document",
-        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
         type: 'pdf',
         fileUrl: '/papers/linear-one.pdf'
     },
@@ -75,7 +69,6 @@ export const posts: Post[] = [
         date: "2023-10-05",
         category: "数学",
         readTime: "PDF Document",
-        image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
         type: 'pdf',
         fileUrl: '/papers/linear-two.pdf'
     },
@@ -86,7 +79,6 @@ export const posts: Post[] = [
         date: "2025-12-09",
         category: "AI",
         readTime: "28min",
-        image: "https://ix-marketing.imgix.net/automatic.png?auto=format,compress&w=3038",
         type: 'pdf',
         fileUrl: '/papers/Cream.pdf'
     },
@@ -97,7 +89,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/01-绪论.pdf'
     },
@@ -108,7 +99,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/02-关系数据库.pdf'
     },
@@ -119,7 +109,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/03-关系数据库标准语言SQL.pdf'
     },
@@ -130,7 +119,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/04-数据库安全性.pdf'
     },
@@ -141,7 +129,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/05-数据库完整性.pdf'
     },
@@ -152,7 +139,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/06-关系数据理论.pdf'
     },
@@ -164,7 +150,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/07-数据库设计.pdf'
     },
@@ -176,7 +161,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/10-数据库恢复技术.pdf'
     },
@@ -187,7 +171,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/11-并发控制.pdf'
     },
@@ -198,7 +181,6 @@ export const posts: Post[] = [
         date: "2026-1-1",
         category: "数据库",
         readTime: "5min",
-        image: "/images/Database.jpg",
         type: 'pdf',
         fileUrl: '/papers/数据库复习相关/数据管理基础复习指南.pdf'
     },
