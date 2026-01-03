@@ -200,6 +200,26 @@ export const posts: Post[] = [
         readTime: "FOLDER",
         children: [
             {
+                id: 100012023,
+                title: "数据库基础2023往年卷",
+                excerpt: "2023年数据库管理基础试题，复习使用",
+                date: "2026-01-03",
+                category: "数据库",
+                readTime: "5min",
+                type: 'pdf',
+                fileUrl: '/papers/数据库复习相关/2023.pdf'
+            },
+            {
+                id: 100012020,
+                title: "数据库基础2020往年卷",
+                excerpt: "2020年数据库管理基础试题，复习使用",
+                date: "2026-01-03",
+                category: "数据库",
+                readTime: "5min",
+                type: 'pdf',
+                fileUrl: '/papers/数据库复习相关/2020.pdf'
+            },
+            {
                 id: 17,
                 title: "数据库基础复习总指南",
                 excerpt: "针对 NJUSE 课程的综合复习建议。",
