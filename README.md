@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# 📖 站点介绍 #
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+hanerson.top 是我的个人静态站点，核心目的是作为个人展示与内容沉淀的窗口，摒弃冗余设计，以简洁清晰的形式呈现核心信息
 
-Currently, two official plugins are available:
+# 🎯 核心功能 #
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 个人品牌展示：核心展示个人昵称「hanerson」，强化个人标识
 
-## React Compiler
+- 核心信息导航：整合个人简介、学习项目、资源链接等核心板块入口，便捷访问
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 多端自适应：完美适配桌面端、移动端等不同设备，保证全场景下的排版清晰与访问流畅
 
-## Expanding the ESLint configuration
+- 资源聚合入口：可作为学习笔记、编程项目、个人仓库等内容的集中跳转枢纽
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🌐 访问方式 #
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+访问地址：https://hanerson.top
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+访问说明：无需注册登录，直接访问即可浏览全部公开内容
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 📌 站点定位与愿景 #
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+建站目的：打造个人专属的「数字名片」，集中展示个人相关信息、学习成果与分享内容，方便他人了解我与我的创作
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+核心内容：包含个人简介、学习沉淀、项目分享等板块，是个人成长与交流的小平台
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 🔄 后续规划 #
+
+- 补充更多学习与创作内容
+
+- 优化内容分类，提升浏览体验
+
+- 新增社交账号关联，方便交流
