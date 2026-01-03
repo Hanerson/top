@@ -1,14 +1,14 @@
-// src/types.ts
-export type PostType = 'article' | 'pdf';
+export type PostType = 'article' | 'pdf' | 'folder'; // 新增 folder 类型
 
 export interface Post {
-    id: number;
+    id: number; // 文件夹也需要一个唯一 id
     title: string;
-    excerpt: string;
-    date: string;     // 格式建议: YYYY-MM-DD
+    excerpt?: string; // 文件夹可不提供
+    date: string;
     category: string;
     readTime: string;
     type: PostType;
-    fileUrl: string;
-    tags?: string[];  // 预留标签位，增强检索理性
+    fileUrl?: string; // 文件夹没有文件路径
+    children?: Post[]; // 用于实现嵌套逻辑
+    tags?: string[];
 }

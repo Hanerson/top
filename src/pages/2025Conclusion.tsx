@@ -1,4 +1,3 @@
-// src/pages/YearlyReport2025.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
