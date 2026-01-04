@@ -2,6 +2,16 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
     {
+        id: 36,
+        title: "南京大学2025年习概重点问题整理",
+        excerpt: "包括一些课程当中经常提到的问题以及重点理论整理 #原创",
+        date: "2026-1-4",
+        category: "南软",
+        readTime: "28min",
+        type: 'pdf',
+        fileUrl: '/papers/xiTheory.pdf'
+    },
+    {
         id: 10002,
         type: 'folder',
         title: "计算机组成与体系结构复习讲义",
@@ -200,6 +210,126 @@ export const posts: Post[] = [
         readTime: "FOLDER",
         children: [
             {
+                id: 20001,
+                type: "folder",
+                title: "重点章节",
+                date: "2026-01-04",
+                category: "数据库",
+                readTime: "FOLDER",
+                children: [
+                    {
+                        id: 200011,
+                        title: "视图",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/视图.pdf'
+                    },
+                    {
+                        id: 200012,
+                        title: "关系范式",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/关系范式.pdf'
+                    },
+                    {
+                        id: 200013,
+                        title: "存取控制",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/存取控制.pdf'
+                    },
+                    {
+                        id: 200014,
+                        title: "并发",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/并发.pdf'
+                    },
+                    {
+                        id: 200015,
+                        title: "概念模型以及ER图",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/概念模型以及ER图.pdf'
+                    },
+                    {
+                        id: 200016,
+                        title: "数据库故障相关",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/数据库故障相关.pdf'
+                    },
+                    {
+                        id: 200017,
+                        title: "断言与触发器",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/断言与触发器.pdf'
+                    },
+                    {
+                        id: 200018,
+                        title: "NoSQL与仲裁",
+                        excerpt: "",
+                        date: "2026-01-04",
+                        category: "数据库",
+                        readTime: "20min",
+                        type: 'pdf',
+                        fileUrl: '/papers/数据库复习相关/pointChapters/NoSQL与仲裁.pdf'
+                    },
+                ]
+            },
+            {
+                id: 10001002,
+                title: "数据库作业整合",
+                excerpt: "往期作业集合",
+                date: "2026-01-04",
+                category: "数据库",
+                readTime: "20min",
+                type: 'pdf',
+                fileUrl: '/papers/数据库复习相关/作业集合.pdf'
+            },
+            {
+                id: 10001001,
+                title: "数据库个人笔记",
+                excerpt: "包括部分拓展题以及NF重点解释",
+                date: "2026-01-04",
+                category: "数据库",
+                readTime: "20min",
+                type: 'pdf',
+                fileUrl: '/papers/数据库复习相关/数据库复习笔记.pdf'
+            },
+            {
+                id: 10001000,
+                title: "数据库课件章节导航",
+                excerpt: "对于每一个章节做了简单导航，一个对于每一个章节的简单内容概括",
+                date: "2026-01-04",
+                category: "数据库",
+                readTime: "20min",
+                type: 'pdf',
+                fileUrl: '/papers/数据库复习相关/数据管理基础章节导航.pdf'
+            },
+            {
                 id: 100012023,
                 title: "数据库基础2023往年卷",
                 excerpt: "2023年数据库管理基础试题，复习使用",
@@ -340,7 +470,7 @@ export const posts: Post[] = [
         title: "OSI 模型：物理层到网络层",
         excerpt: "详解网络通信的基础。重点分析物理层、数据链路层与网络层的协议转换与数据封装过程。",
         date: "2023-11-20",
-        category: "网络",
+        category: "南软",
         readTime: "12 min read",
         type: 'article',
         fileUrl: '/posts/OSILayers-phi-dataLink-netWork-transformation.md'
@@ -350,7 +480,7 @@ export const posts: Post[] = [
         title: "计算机组成与体系结构复习",
         excerpt: "COA 核心知识点梳理：指令集、流水线技术、存储器层次结构以及处理器设计原理。",
         date: "2023-11-15",
-        category: "CS 基础",
+        category: "南软",
         readTime: "20 min read",
         type: 'article',
         fileUrl: '/posts/COA-review.md'
@@ -390,7 +520,7 @@ export const posts: Post[] = [
         title: "线性代数笔记 (Linear Algebra II)",
         excerpt: "特征值、特征向量、对角化以及线性变换的高级应用（第二部分）。",
         date: "2023-10-05",
-        category: "数学",
+        category: "MATH",
         readTime: "PDF Document",
         type: 'pdf',
         fileUrl: '/papers/linear-two.pdf'
@@ -400,7 +530,7 @@ export const posts: Post[] = [
         title: "线性代数笔记 (Linear Algebra I)",
         excerpt: "线性空间、矩阵运算与行列式的基础理论推导与习题解析（第一部分）。",
         date: "2023-10-01",
-        category: "数学",
+        category: "MATH",
         readTime: "PDF Document",
         type: 'pdf',
         fileUrl: '/papers/linear-one.pdf'
