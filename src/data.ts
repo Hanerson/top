@@ -4,7 +4,7 @@ export const posts: Post[] = [
     {
         id: 36,
         title: "南京大学2025年习概重点问题整理",
-        excerpt: "包括一些课程当中经常提到的问题以及重点理论整理 #原创",
+        excerpt: "包括一些课程当中经常提到的问题以及重点理论整理 #共创 @rh_Z",
         date: "2026-1-4",
         category: "南软",
         readTime: "28min",
