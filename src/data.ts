@@ -2,10 +2,20 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
     {
+        id: 37,
+        title: "南京大学2025年毛泽东思想概述重点问题整理",
+        excerpt: "毛概当中的课程梳理以及问题概述",
+        date: "2026-1-5",
+        category: "南软",
+        readTime: "28min",
+        type: 'pdf',
+        fileUrl: '/papers/maoTheory.pdf'
+    },
+    {
         id: 36,
         title: "南京大学2025年习概重点问题整理",
         excerpt: "包括一些课程当中经常提到的问题以及重点理论整理 #共创 @rh_Z",
-        date: "2026-1-4",
+        date: "2026-1-5",
         category: "南软",
         readTime: "28min",
         type: 'pdf',
