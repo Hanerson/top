@@ -30,6 +30,117 @@ export const posts: Post[] = [
         readTime: "FOLDER",
         children: [
             {
+                id: 100022,
+                type: 'folder',
+                title: "COA 相关作业整合",
+                date: "2026-01-07",
+                category: "作业",
+                readTime: "FOLDER",
+                children: [
+                    {
+                        id: 39,
+                        title: "COA 作业 1",
+                        excerpt: "计算机组成原理第一次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_1.pdf"
+                    },
+                    {
+                        id: 40,
+                        title: "COA 作业 2",
+                        excerpt: "计算机组成原理第二次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_2.pdf"
+                    },
+                    {
+                        id: 41,
+                        title: "COA 作业 3",
+                        excerpt: "计算机组成原理第三次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_3.pdf"
+                    },
+                    {
+                        id: 42,
+                        title: "COA 作业 4",
+                        excerpt: "计算机组成原理第四次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_4.pdf"
+                    },
+                    {
+                        id: 43,
+                        title: "COA 作业 5",
+                        excerpt: "计算机组成原理第五次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_5.pdf"
+                    },
+                    {
+                        id: 44,
+                        title: "COA 作业 6",
+                        excerpt: "计算机组成原理第六次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_6.pdf"
+                    },
+                    {
+                        id: 45,
+                        title: "COA 作业 7",
+                        excerpt: "计算机组成原理第七次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_7.pdf"
+                    },
+                    {
+                        id: 46,
+                        title: "COA 作业 8",
+                        excerpt: "计算机组成原理第八次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_8.pdf"
+                    },
+                    {
+                        id: 47,
+                        title: "COA 作业 9",
+                        excerpt: "计算机组成原理第九次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_9.pdf"
+                    },
+                    {
+                        id: 48,
+                        title: "COA 作业 10",
+                        excerpt: "计算机组成原理第十次作业",
+                        date: "2026-01-02",
+                        category: "作业",
+                        readTime: "5min",
+                        type: "pdf",
+                        fileUrl: "/papers/COA/COA_homeworks/HW_10.pdf"
+                    }
+
+                ]
+            },
+            {
                 id: 35,
                 title: "90. 组成原理总复习",
                 excerpt: "COA 全书考点串联与回顾。",
