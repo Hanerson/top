@@ -2,6 +2,36 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
     {
+        id: 10003,
+        type: 'folder',
+        title: "数据结构与算法往年卷复习参考",
+        date: "2026-01-02",
+        category: "DStructure",
+        readTime: "FOLDER",
+        children: [
+            {
+                id: 100031,
+                title: "数据结构与算法2023",
+                excerpt: "2023年往年卷（2021级前辈的2023年试卷）",
+                date: "2026-1-8",
+                category: "",
+                readTime: "8min",
+                type: 'pdf',
+                fileUrl: '/papers/DStructure_Review/2023.pdf'
+            },
+            {
+                id: 100032,
+                title: "数据结构与算法2021",
+                excerpt: "2021年往年卷",
+                date: "2026-1-8",
+                category: "",
+                readTime: "8min",
+                type: 'pdf',
+                fileUrl: '/papers/DStructure_Review/2021.pdf'
+            },
+        ]
+    },
+    {
         id: 37,
         title: "南京大学2025年毛泽东思想概述重点问题整理",
         excerpt: "毛概当中的课程梳理以及问题概述",

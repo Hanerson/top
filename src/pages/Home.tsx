@@ -122,7 +122,7 @@ const Home: React.FC = () => {
                     <Terminal size={14} />
                     <span>root@hanerson:~# list --{selectedCategory.toLowerCase()}</span>
                 </motion.div>
-                <h1 className="text-4xl font-bold tracking-tight mb-4">“徒言不履，非真英雄也！”</h1>
+                <h1 className="text-4xl font-bold tracking-tight mb-4">“先做起来！”</h1>
             </header>
 
             <nav className="sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6">
