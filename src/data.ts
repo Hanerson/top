@@ -2,6 +2,16 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
     {
+        id: 52,
+        title: "图论算法Kruskal、Prim与Dijkstra详细解析",
+        excerpt: "对于Kruskal、Prim与Dijkstra三大图论算法的详细解释，附带Java实现 #原创",
+        date: "2026-1-10",
+        category: "算法",
+        readTime: "15min",
+        type: 'pdf',
+        fileUrl: '/papers/图论三算法.pdf'
+    },
+    {
         id: 51,
         title: "基于Java实现的各类排序算法详解",
         excerpt: "本文使用Java代码演示，详细解释了各种排序算法的运行逻辑以及复杂度分析 #原创",
