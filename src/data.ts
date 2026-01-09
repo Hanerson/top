@@ -2,6 +2,16 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
     {
+        id: 51,
+        title: "基于Java实现的各类排序算法详解",
+        excerpt: "本文使用Java代码演示，详细解释了各种排序算法的运行逻辑以及复杂度分析 #原创",
+        date: "2026-1-9",
+        category: "算法",
+        readTime: "15min",
+        type: 'pdf',
+        fileUrl: '/papers/基于代码实现的排序算法深入讲解.pdf'
+    },
+    {
         id: 10003,
         type: 'folder',
         title: "数据结构与算法往年卷复习参考",
@@ -10,7 +20,7 @@ export const posts: Post[] = [
         readTime: "FOLDER",
         children: [
             {
-                id: 100031,
+                id: 49,
                 title: "数据结构与算法2023",
                 excerpt: "2023年往年卷（2021级前辈的2023年试卷）",
                 date: "2026-1-8",
@@ -20,7 +30,7 @@ export const posts: Post[] = [
                 fileUrl: '/papers/DStructure_Review/2023.pdf'
             },
             {
-                id: 100032,
+                id: 50,
                 title: "数据结构与算法2021",
                 excerpt: "2021年往年卷",
                 date: "2026-1-8",
