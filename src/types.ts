@@ -1,14 +1,24 @@
-export type PostType = 'article' | 'pdf' | 'folder'; // 新增 folder 类型
+export type PostType = 'article' | 'pdf' | 'folder';
+
+// 定义三大核心分类
+export type MainCategory = '课程资料' | '技术探索' | '日常思考';
 
 export interface Post {
-    id: number; // 文件夹也需要一个唯一 id
+    id: number;
     title: string;
-    excerpt?: string; // 文件夹可不提供
+    excerpt?: string;
     date: string;
-    category: string;
+    category: MainCategory; // 仅限这三个
     readTime: string;
     type: PostType;
-    fileUrl?: string; // 文件夹没有文件路径
-    children?: Post[]; // 用于实现嵌套逻辑
-    tags?: string[];
+    fileUrl?: string;
+    children?: Post[];
+    tags: string[]; // 具体的描述全部收纳到这里
 }
+
+// UI 映射配置
+export const CATEGORY_CONFIG: Record<MainCategory, { color: string; icon: string }> = {
+    '课程资料': { color: 'text-blue-600 bg-blue-50', icon: '📚' },
+    '技术探索': { color: 'text-orange-600 bg-orange-50', icon: '🚀' },
+    '日常思考': { color: 'text-purple-600 bg-purple-50', icon: '💡' }
+};

@@ -5,7 +5,7 @@ import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
 import { posts } from '../data';
 import { Post } from '../types';
-import { ArrowLeft, Clock, Calendar, Box, Maximize2, Terminal } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, Box, Maximize2, Terminal, Download } from 'lucide-react'; // 引入 Download 图标
 import { motion } from 'framer-motion';
 import PDFViewer from '../components/PDFViewer';
 import 'highlight.js/styles/github-dark.css';
@@ -14,6 +14,8 @@ const BlogPost: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const [content, setContent] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(true);
+    const [isDownloading, setIsDownloading] = useState(false); // 新增下载状态控制
+
     const findPostById = (items: Post[], targetId: number): Post | undefined => {
         for (const item of items) {
             if (item.id === targetId) return item;
@@ -25,12 +27,33 @@ const BlogPost: React.FC = () => {
         return undefined;
     };
 
-    // 使用 useMemo 优化性能，仅在 id 或 posts 变化时重新计算
     const post = useMemo(() => {
         return findPostById(posts, parseInt(id || '0'));
     }, [id]);
 
     const isPDF = post?.type === 'pdf';
+
+    // 下载处理函数
+    const handleDownload = async () => {
+        if (!post?.fileUrl) return;
+        setIsDownloading(true);
+        try {
+            const response = await fetch(post.fileUrl);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `${post.title}.pdf`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (err) {
+            window.open(post.fileUrl, '_blank');
+        } finally {
+            setIsDownloading(false);
+        }
+    };
 
     useEffect(() => {
         if (post?.type === 'article' && post.fileUrl) {
@@ -48,11 +71,9 @@ const BlogPost: React.FC = () => {
         } else {
             setLoading(false);
         }
-        // 切换文章时自动滚动到顶部
         window.scrollTo(0, 0);
     }, [post]);
 
-    // 错误处理：找不到文章时显示
     if (!post) {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center font-mono text-slate-400">
@@ -65,7 +86,6 @@ const BlogPost: React.FC = () => {
 
     return (
         <article className="min-h-screen bg-white pt-24 pb-20 px-4 md:px-6">
-            {/* 动态调整容器宽度：PDF 使用宽屏 5xl，纯文字使用阅读专注型 2xl */}
             <div className={`mx-auto transition-all duration-500 ${isPDF ? 'max-w-5xl' : 'max-w-2xl'}`}>
 
                 {/* 顶部导航与 Meta 信息 */}
@@ -77,9 +97,25 @@ const BlogPost: React.FC = () => {
                         <ArrowLeft size={12} className="group-hover:-translate-x-1 transition-transform" />
                         <span>cd ..</span>
                     </Link>
+
+                    {/* 仅在 PDF 模式下显示下载按钮 */}
                     {isPDF && (
-                        <div className="flex items-center gap-2 text-slate-300 font-mono text-[10px]">
-                            <Maximize2 size={10} /> <span>THEATER_MODE_ACTIVE</span>
+                        <div className="flex items-center gap-4">
+                            <button
+                                onClick={handleDownload}
+                                disabled={isDownloading}
+                                className={`flex items-center gap-2 font-mono text-[10px] tracking-tighter transition-all px-3 py-1 rounded-full border ${
+                                    isDownloading
+                                        ? 'text-slate-300 border-slate-100 cursor-not-allowed'
+                                        : 'text-indigo-500 border-indigo-100 hover:bg-indigo-50 hover:border-indigo-200'
+                                }`}
+                            >
+                                <Download size={12} className={isDownloading ? "animate-bounce" : ""} />
+                                <span>{isDownloading ? '正在拉取……' : '点击此处立即下载'}</span>
+                            </button>
+                            <div className="hidden md:flex items-center gap-2 text-slate-300 font-mono text-[10px]">
+                                <Maximize2 size={10} /> <span>THEATER_MODE</span>
+                            </div>
                         </div>
                     )}
                 </div>
